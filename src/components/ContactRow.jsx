@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export default function ContactRow({ setSelectedContactId, contact }) {
   return (
     <tr
@@ -8,9 +7,9 @@ export default function ContactRow({ setSelectedContactId, contact }) {
         setSelectedContactId(contact.id);
       }}
     >
-      <td>{contact.name}</td>
-      <td>{contact.email}</td>
-      <td>{contact.phone}</td>
+      <td className = "name">{contact.name}</td>
+      <td className = "email">{contact.email}</td>
+      <td className = "phone">{contact.phone}</td>
     </tr>
   );
 }
